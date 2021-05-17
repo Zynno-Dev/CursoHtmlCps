@@ -1,114 +1,199 @@
 <!DOCTYPE html>
 <html lang="es-la">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-  <link rel="stylesheet" href="/src/style.css">
-  <title>TutoVS</title>
-  <link rel="icon" href="https://img.icons8.com/nolan/64/video.png" type="image" sizes="16x16">
-</head>
-<body>
-  <header>
-    <div class="collapse" id="navbarToggleExternalContent">
-      <div class="bg-dark p-4">
-        <h5 class="text-white h4"><a href="#" class="acambiar">Home</a></h5>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>TutoVS</title>
+    <link
+      rel="icon"
+      href="https://img.icons8.com/nolan/64/video.png"
+      type="image"
+      sizes="16x16"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <h5 class="text-white h4"><a href="#" class="acambiar">Home</a></h5>
+        </div>
+        <div class="bg-dark p-4">
+          <h5 class="text-white h4">
+            <a href="videos.html" class="acambiar">Videos</a>
+          </h5>
+        </div>
+        <div class="bg-dark p-4">
+          <h5 class="text-white h4">
+            <a href="About.html" class="acambiar">About</a>
+          </h5>
+        </div>
       </div>
-      <div class="bg-dark p-4">
-        <h5 class="text-white h4"><a href="videos.html" class="acambiar">Videos</a></h5>
-      </div>
-      <div class="bg-dark p-4">
-        <h5 class="text-white h4"><a href="About.html" class="acambiar">About</a></h5>
-      </div>
-    </div>
-    <nav class="navbar navbar-dark bg-dark">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div
+        id="carouselExampleDark"
+        class="carousel carousel-dark slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img
+              src="https://images.ctfassets.net/hrltx12pl8hq/ubAQSr2iExW3EA5ZdB4iN/5c2dc2de13e0287ed385540d56d16b4e/vector-clear05.gif?fit=fill&w=480&h=268"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="cambiarablanco">Tutoriales</h5>
+              <p class="cambiarablanco">Videos tutoriales gratis.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              src="https://fondosmil.com/fondo/7403.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Paisaje nevado</h5>
+              <p>Esto es una prueba</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images2.alphacoders.com/100/thumb-1920-1003880.png"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Isla</h5>
+              <p>Casa en medio de la isla</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
         </button>
       </div>
-    </nav>
-  </header> 
-  <main>
-    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="10000">
-          <img src="https://images.ctfassets.net/hrltx12pl8hq/ubAQSr2iExW3EA5ZdB4iN/5c2dc2de13e0287ed385540d56d16b4e/vector-clear05.gif?fit=fill&w=480&h=268" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5 class="cambiarablanco">Tutoriales</h5>
-            <p class="cambiarablanco">Videos tutoriales gratis.</p>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              <i
+                >Velit odio ab quaerat similique sequi quidem reprehenderit
+                tempora consectetur mollitia saepe</i
+              >
+              tenetur fugiat quisquam minus vero architecto, inventore assumenda
+              nihil ducimus.
+            </p>
           </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="https://fondosmil.com/fondo/7403.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Paisaje nevado</h5>
-            <p>Esto es una prueba</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="https://images2.alphacoders.com/100/thumb-1920-1003880.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Isla</h5>
-            <p>Casa en medio de la isla</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </main>
-  <footer class="site-footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 col-md-6">
-              <h6>About</h6>
-              <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. <i>Velit odio ab quaerat similique sequi quidem reprehenderit tempora consectetur mollitia saepe</i> tenetur fugiat quisquam minus vero architecto, inventore assumenda nihil ducimus.</p>
-            </div>
-  
-            <div class="col-xs-6 col-md-3">
-              <h6>Categories</h6>
-              <ul class="footer-links">
-                <li><a href="#">Videos</a></li>
-                <li><a href="#">Imagenes</a></li>
-                <li><a href="#">Documentacion</a></li>
-                <li><a href="#">Vales</a></li>
-                <li><a href="#">C.P.S</a></li>
-                <li><a href="#">Links</a></li>
-              </ul>
-            </div>
-  
-            <div class="col-xs-6 col-md-3">
-              <h6>Quick Links</h6>
-              <ul class="footer-links">
-                <li><a href="http://scanfcode.com/about/">About Us</a></li>
-                <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
-                <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
-              </ul>
-            </div>
-          </div>
-          <hr>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 col-sm-6 col-xs-12">
-              <p class="copyright-text">Copyright &copy; 2021 C.P.S
-              </p>
-        </div>
-  </footer>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-</html>
 
+          <div class="col-xs-6 col-md-3">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="#">Videos</a></li>
+              <li><a href="#">Imagenes</a></li>
+              <li><a href="#">Documentacion</a></li>
+              <li><a href="#">Vales</a></li>
+              <li><a href="#">C.P.S</a></li>
+              <li><a href="#">Links</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/about/">About Us</a></li>
+              <li>
+                <a href="http://scanfcode.com/contribute-at-scanfcode/"
+                  >Contribute</a
+                >
+              </li>
+              <li>
+                <a href="http://scanfcode.com/privacy-policy/"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2021 C.P.S</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"
+  ></script>
+</html>
